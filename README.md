@@ -1,4 +1,4 @@
 # phptutorial
-caculate-5.php ===>加減乘除剩多少
-caculate-7.php ===>閏年
-caculate-8.php ===>萬年曆
+Homework1 ===>加減乘除剩多少
+Homework2 ===>閏年
+Homework3 ===>萬年曆
