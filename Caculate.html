@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Lab</title>
+</head>
+<body>
+<div id="debug">
+    <input type="text" id="x" name="x" value="0"> + <input type="text" id="y" name="y" value="0">
+    <input type="button" value="=" onclick="cal()">
+    <sapn id="result"></sapn>
+</div>
+<script>
+    // 變數字
+    function cal(){
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var r = x + y;
+        //var result = document.getElementById("result");
+        result.innerHTML= r;
+    }
+</script>
+</body>
+</html>
