@@ -1,3 +1,7 @@
+<a type="button" href="Caculate-5.php">HW 01</a>
+<a type="button" href="Caculate-7.php">HW 02</a>
+<a type="button" href="Caculate-8.php">HW 03</a>
+
 <h1>閏年計算--Assignment 2/3</h1>
 <h3>曆年比回歸年的時間總是少了一點點</h3>
 <p>天文館指出，累積4年後多的0.96876天，與真正的一日尚差0.03124天，<br>
@@ -24,11 +28,11 @@ $F = "西元 " . $year . " 年不是閏年！";
     <input type="submit" value="？">
     <span id="result">
         <?php
-            if ($year >= 4000 && $year % 4000 == 0) {
+            if ($year % 4000 == 0) {
                 echo $F;
-            } elseif ($year >= 400 && $year % 400 == 0) {
+            } elseif ( $year % 400 == 0) {
                 echo $Y;
-            } elseif ($year >= 100 && $year % 100 == 0) {
+            } elseif ($year % 100 == 0) {
                 echo $F;
             } elseif ($year % 4 == 0) {
                 echo $Y;
