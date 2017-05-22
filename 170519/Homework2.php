@@ -1,6 +1,6 @@
-<a type="button" href="Caculate-5.php">HW 01</a>
-<a type="button" href="Caculate-7.php">HW 02</a>
-<a type="button" href="Caculate-8.php">HW 03</a>
+<a type="button" href="Homework1.php">HW 01</a>
+<a type="button" href="Homework2.php">HW 02</a>
+<a type="button" href="Homework3.php">HW 03</a>
 
 <h1>閏年計算--Assignment 2/3</h1>
 <h3>曆年比回歸年的時間總是少了一點點</h3>
