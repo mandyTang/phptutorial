@@ -1,5 +1,5 @@
-<a type="button" href="Homework1.php">HW 01</a>
-<a type="button" href="Homework2.php">HW 02</a>
+<a type="button" href="../Homework/170519_Count.php">HW 01</a>
+<a type="button" href="../Homework/170519_LeapMonth.php">HW 02</a>
 <a type="button" href="Homework3.php">HW 03</a>
 
 <h1>萬年曆計算--Assignment 3/3</h1>
