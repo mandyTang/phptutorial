@@ -1,20 +1,19 @@
 <?php
-    $nums=range(1,100);
+// use function api
+    include 'isPrimeApi.php';
+    $nums=range(1,1000);
 //  foreach($nums as $num){
 //        echo $num.'<br>';
 //  }
-
+    
     $result = pow($x,$y);
-    foreach($nums as $i => $value){
-        $table[($i)/10][(int)(($i)%10)]=$value;
+    foreach($nums as $i => $number){
+        $table[($i)/10][(int)(($i)%10)]=$number;
 //        $x = (int)(($i/10))+1;
 //        $y = ($i%10)+1;
-//        echo $value.' row = '.$x.' ; col ='.$y.'<br>';
+//        echo $number.' row = '.$x.' ; col ='.$y.'<br>';
 //        echo '<hr>';
     }
-
-
-
 ?>
 <style type="text/css">
     body{
@@ -62,23 +61,18 @@
         <h1>1-100 質數表 - Prime Number</h1>
         <p><span>&lhblk;</span> 質數上色</p>
     </caption>
-        <?php
-            foreach($table as $row){
-                echo '<tr>';
-                foreach($row as $value){
-                    if($value==1 || $value%2==0 && (int)($value/2)>=2){
-                        echo '<td class="n2">'.$value.'</td>';
-                    }else if($value%3==0 && (int)($value/3)>=2){
-                        echo '<td class="n3">'.$value.'</td>';
-                    }else if($value%5==0 && (int)($value/5)>=2){
-                        echo '<td class="n5">'.$value.'</td>';
-                    }else if($value%7==0 && (int)($value/7)>=2){
-                        echo '<td class="n7">'.$value.'</td>';
-                    }else{
-                        echo '<td class="prime">'.$value.'</td>';
-                    }
-                }
-                echo '</tr>';
+    <?php
+    foreach($table as $row){
+        echo '<tr>';
+        foreach($row as $number){
+            if(isPrime($number)==1 && $number!=1){
+                echo '<td class="prime">'.$number.'</td>';
+            }else{
+                echo '<td class="n2">'.$number.'</td>';
             }
-        ?>
+
+        }
+        echo '</tr>';
+    }
+    ?>
 </table>
