@@ -13,17 +13,18 @@ foreach ($poker as $i => $card){
     //echo $card.'<br>';
 }
 echo '<hr>';
+$player[0]
 ?>
 <table width="100%" border="0">
         <?php
             foreach($player as $sb){
                 sort($sb);
                 echo '<tr>';
+                echo "<td>.{$player}";
                 foreach ($sb as $card) {
                     echo '<td>'."<img src='img/Artboard%20{$card}.svg'>".'</td>';
                 }
-                echo '</tr>';
+                echo '</td></tr>';
             }
-
         ?>
 </table>

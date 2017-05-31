@@ -33,6 +33,9 @@
         border:2px solid white;
         border-radius: 5px;
     }
+    h1{
+        text-shadow: 0px 3px 0.1px #747d7d;
+    }
     p{
         color:rgba(255,255,255,0.8);
     }
@@ -54,17 +57,22 @@
     }
     td{
         height:70px;
+        border-radius: 3px;
         /*border:1px solid white;*/
     }
     .n2,.n3,.n5,.n7{
         background-color:#173332;
+        background: linear-gradient(#081918, rgb(21, 60, 58));
         color:transparent;
         text-shadow: 0 0 2px rgba(255,255,255,0.15);
+        border-style: inset;
     }
     .prime{
-        background-color:#3dbfb7;
+        background: linear-gradient(#3dbfb7, rgb(63, 130, 128));
         color:white;
         font-weight:bold;
+        border-style: outset;
+
     }
 </style>
 <table>
