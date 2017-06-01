@@ -7,7 +7,7 @@ include 'sql.php';
     $_SESSION['id'] = $editid;
     $pdo = new pdo($dsn, $user, $password, $opt);
     $sql = "select * from member where id=?";
-    $editsth = $pdo->prepare($sql)
+    $editsth = $pdo->prepare($sql);
     $editsth->execute([$editid]);
     $editrs = $editsth->fetchAll();
     $row = array_shift($editrs);
